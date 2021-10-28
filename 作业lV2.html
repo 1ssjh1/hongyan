@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红岩作业LV2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .div1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px auto;
+            width: 700px;
+            border: 2px solid pink transparent;
+        }
+        
+        span {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            background-color: rgba(24, 23, 23, 0.8);
+            border: 2px solid rgb(61, 61, 61);
+            box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.5);
+        }
+        
+        div span:nth-child(n) {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        
+        div span>div {
+            margin: 10px;
+            display: inline-block;
+            width: 180px;
+            height: 280px;
+            border-radius: 10px;
+            text-align: center;
+            background: linear-gradient(to right, rgb(92, 93, 95, .9), rgb(0, 0, 0, .9));
+            background-size: 100%;
+            color: aliceblue;
+            position: relative;
+            transition: 0.7s ease;
+        }
+        
+        div span>div:hover {
+            transform: translateY(-80px);
+        }
+        
+        .div3>input:hover {
+            background-color: rgb(254, 239, 249);
+            color: black;
+            border-color: rgb(254, 239, 249);
+        }
+        
+        div span>div::after {
+            content: '01';
+            top: 10px;
+            right: 10px;
+            font-weight: 100000;
+            font-size: 90px;
+            display: inline-block;
+            position: absolute;
+            color: rgb(238, 236, 232, 0.1);
+        }
+        
+        div span div div:nth-child(1) {
+            margin-top: 60px;
+            font-weight: 900;
+            font-size: 25px;
+        }
+        
+        input {
+            display: inline-block;
+            height: 35px;
+            color: aliceblue;
+            transition: 0.7s ease;
+            background-color: rgb(34, 148, 244);
+            border-radius: 6px;
+            border: 2px solid rgb(34, 148, 244);
+        }
+        
+        div span div section {
+            display: inline-block;
+            color: aliceblue;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="div1">
+
+        <span>
+            <div class="div2">  
+        
+        
+            <div>
+                card one
+            </div>
+                 <section style="word-wrap:break-word; word-break:break-all;margin-top: 20px;margin-bottom: 20px; ">重庆邮电大学皇家寝室，成功人士，巅峰住宅，风情雅苑，坐拥临水美景，纵享贵族至尊 </section>
+        
+              <div class="div3"> <input type="button" value="请按我一次!"></div>
+        
+        
+        
+        
+        
+        </div>
+        </span>
+
+        <span>
+            <div></div>
+        </span>
+
+        <span>
+            <div></div>
+        </span>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
